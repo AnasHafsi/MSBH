@@ -1,0 +1,37 @@
+.Header {
+    padding-top: 52px;
+    .elements {
+        display: inline-block;
+        .logo {
+            padding-left: 50px;
+            display: inline-block;
+            svg {
+            }
+        }
+        .start {
+            padding-left: 70vw;
+            button {
+                box-sizing: border-box;
+                background-color: white;
+                position: absolute;
+                width: 187px;
+                height: 36px;
+                z-index: 1;
+                border: 1px solid #03559b;
+                border-radius: 500px;
+
+                line-height: 18px;
+                a {
+                    text-decoration: none;
+                    font-family: "DM Sans";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #03559b;
+                }
+            }
+        }
+    }
+}
