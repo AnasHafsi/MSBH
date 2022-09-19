@@ -1,7 +1,18 @@
 module.exports = {
-  siteMetadata: {
-    title: `MSBH`,
-    siteUrl: `https://www.yourdomain.tld`
-  },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-sitemap"]
+    siteMetadata: {
+        title: `MSBH`,
+    },
+    plugins: [
+        "gatsby-plugin-sass",
+        "gatsby-plugin-sitemap",
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: `/src/assets/`,
+                    include: /\.inline\.svg$/,
+                },
+            },
+        },
+    ],
 };
