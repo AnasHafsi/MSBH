@@ -1,19 +1,18 @@
 .Header {
-    padding-top: 52px;
+    margin-top: 50px;
     .elements {
-        display: inline-block;
+        justify-content: space-between;
+        display: flex;
         .logo {
-            padding-left: 50px;
             display: inline-block;
-            svg {
-            }
         }
         .start {
-            padding-left: 70vw;
+            display: inline-block;
+            align-self: flex-end;
             button {
                 box-sizing: border-box;
                 background-color: white;
-                position: absolute;
+                position: relative;
                 width: 187px;
                 height: 36px;
                 z-index: 1;
