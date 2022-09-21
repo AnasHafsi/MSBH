@@ -1,4 +1,8 @@
 import React from "react";
+import Behance from "../assets/behance.inline.svg";
+import Dribbble from "../assets/dribbble.inline.svg";
+import Instagram from "../assets/instagram.inline.svg";
+import Linkedin from "../assets/linkedin.inline.svg";
 
 function Navigation() {
     return (
@@ -20,13 +24,24 @@ function Navigation() {
                 </div>
                 <div className="external">
                     <div className="element">
-                        <a>LinkedIn</a>
+                        <a>
+                            <Instagram />
+                        </a>
                     </div>
                     <div className="element">
-                        <a>Dribble</a>
+                        <a>
+                            <Linkedin />
+                        </a>
+                    </div>
+                    <div className="element clearfix">
+                        <a className="clearfix">
+                            <Dribbble className="clearfix" />
+                        </a>
                     </div>
                     <div className="element">
-                        <a>Behance</a>
+                        <a>
+                            <Behance />
+                        </a>
                     </div>
                 </div>
             </div>

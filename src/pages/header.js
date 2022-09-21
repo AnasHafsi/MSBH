@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../assets/logo.inline.svg";
-import { isWindows } from "react-device-detect";
 function Header() {
     return (
         <div className="header">
