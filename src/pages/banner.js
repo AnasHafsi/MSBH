@@ -11,7 +11,7 @@ function Banner() {
                     label="Waving Hand Medium Light Skin Tone"
                     alt="Waving Hand Medium Light Skin Tone"
                 />{" "}
-                I am Zineb Masbah, UX/UI designer from Casablanca Morocco{" "}
+                I am Public Repository, UX/UI designer from Casablanca Morocco{" "}
                 <Emoji symbol="🇲🇦" useFont="true" label="Moroccan Flag" />
             </p>
         </div>
