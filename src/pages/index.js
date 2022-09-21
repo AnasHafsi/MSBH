@@ -1,13 +1,15 @@
 import * as React from "react";
 import Header from "./header";
-import "../styles/App.scss";
+import "../styles/app.scss";
 import Banner from "./banner";
+import Navigation from "./navigation";
 
 function App() {
     return (
         <div className="app">
             <Header></Header>
             <Banner></Banner>
+            <Navigation></Navigation>
         </div>
     );
 }
