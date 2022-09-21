@@ -1,13 +1,11 @@
-.Header {
+.header {
     margin-top: 50px;
     .elements {
         justify-content: space-between;
         display: flex;
         .logo {
-            display: inline-block;
         }
         .start {
-            display: inline-block;
             align-self: flex-end;
             button {
                 box-sizing: border-box;
