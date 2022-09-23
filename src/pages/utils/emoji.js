@@ -1,5 +1,5 @@
 import React from "react";
-import { isWindows } from "react-device-detect";
+import { isWindows, osName } from "react-device-detect";
 const Emoji = (props) => (
     <span
         className={props.useFont && isWindows ? "emojifont" : "emoji"}
@@ -8,6 +8,7 @@ const Emoji = (props) => (
         aria-hidden={props.label ? "false" : "true"}
     >
         {props.symbol}
+        {console.log(osName)}
     </span>
 );
 export default Emoji;
