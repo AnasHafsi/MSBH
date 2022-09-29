@@ -30,14 +30,8 @@
             display: flex;
             gap: 40px;
             .element {
-                border-radius: 40px;
-                width: 2vw;
-                height: 2vw;
-                border: 1px solid $black;
-                box-sizing: border-box;
                 a {
                     svg {
-                        margin: 0.5vw;
                         width: 1vw;
                         height: 1vw;
                     }
