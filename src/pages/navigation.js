@@ -27,22 +27,22 @@ const externalLinks = [
     {
         id: 1,
         name: "Behance",
-        link: "behance.com",
-        icon: <Behance></Behance>
+        link: "https://behance.com",
+        icon: <Behance />
     }, {
         id: 2,
         name: "Instagram",
-        link: "Instagram.com",
+        link: "https://Instagram.com",
         icon: <Instagram />
     }, {
         id: 3,
-        name: "Dribble",
-        link: "Dribble.com",
+        name: "Dribbble",
+        link: "https://Dribbble.com",
         icon: <Dribbble />
     }, {
         id: 4,
         name: "LinkedIn",
-        link: "LinkedIn.com",
+        link: "https://LinkedIn.com",
         icon: <Linkedin />
     },
 ];
