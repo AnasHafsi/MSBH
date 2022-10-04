@@ -4,11 +4,13 @@ function ProjectElement(props) {
     return (
         <div className="project-element">
             <div className="img-element"></div>
-            <div className="description">{props.value.description}</div>
+            <div className="description">
+                {props?.value && props.value.description}
+            </div>
 
             <div className="tags">
-                <div className="tag">{props.value.year}</div>
-                {getTags(props.value.tags)}
+                <div className="tag">{props?.value && props.value.year}</div>
+                {getTags(props?.value && props.value.tags)}
             </div>
             <br></br>
         </div>
@@ -16,7 +18,7 @@ function ProjectElement(props) {
 }
 
 function getTags(params) {
-    if (params.length > 0) {
+    if (params?.length > 0) {
         return params.map((tag) => (
             <div key={tag.key} className="tag">
                 {tag.text}
