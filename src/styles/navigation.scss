@@ -28,12 +28,12 @@
         }
         .external {
             display: flex;
-            gap: 40px;
+            gap: 10px;
             .element {
                 a {
                     svg {
-                        width: 1vw;
-                        height: 1vw;
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
