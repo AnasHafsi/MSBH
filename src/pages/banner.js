@@ -1,5 +1,5 @@
 import React from "react";
-import Emoji from "./utils/emoji";
+import Emoji from "./components/emoji";
 
 function Banner() {
     return (

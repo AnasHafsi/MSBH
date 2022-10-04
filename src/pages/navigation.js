@@ -8,19 +8,22 @@ const internalLinks = [
     {
         id: 1,
         name: "Project",
-        link: "#Project"
-    }, {
+        link: "#projects",
+    },
+    {
         id: 2,
         name: "About",
-        link: "#About"
-    }, {
+        link: "#About",
+    },
+    {
         id: 3,
         name: "Resume",
-        link: "#Resume"
-    }, {
+        link: "#Resume",
+    },
+    {
         id: 4,
         name: "Contact",
-        link: "#Contact"
+        link: "#Contact",
     },
 ];
 const externalLinks = [
@@ -28,41 +31,42 @@ const externalLinks = [
         id: 1,
         name: "Behance",
         link: "https://behance.com",
-        icon: <Behance />
-    }, {
+        icon: <Behance />,
+    },
+    {
         id: 2,
         name: "Instagram",
         link: "https://Instagram.com",
-        icon: <Instagram />
-    }, {
+        icon: <Instagram />,
+    },
+    {
         id: 3,
         name: "Dribbble",
         link: "https://Dribbble.com",
-        icon: <Dribbble />
-    }, {
+        icon: <Dribbble />,
+    },
+    {
         id: 4,
         name: "LinkedIn",
         link: "https://LinkedIn.com",
-        icon: <Linkedin />
+        icon: <Linkedin />,
     },
 ];
-
-
 
 function Navigation() {
     return (
         <div className="navigation">
             <div className="row">
                 <div className="inPage">
-                    {internalLinks.map(navItem => (
-                        <div className="element">
+                    {internalLinks.map((navItem) => (
+                        <div className="element" key={navItem.key}>
                             <a href={navItem.link}>{navItem.name}</a>
                         </div>
                     ))}
                 </div>
                 <div className="external">
-                    {externalLinks.map(navItem => (
-                        <div className="element">
+                    {externalLinks.map((navItem) => (
+                        <div className="element" key={navItem.id}>
                             <a href={navItem.link}>{navItem.icon}</a>
                         </div>
                     ))}

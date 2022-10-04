@@ -1,0 +1,10 @@
+.projects {
+    padding-top: 32px;
+    .elements {
+        display: flex;
+        gap: 19px;
+        .element {
+            width: 33%;
+        }
+    }
+}

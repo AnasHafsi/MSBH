@@ -1,0 +1,44 @@
+.project-element {
+    width: 100%;
+    .img-element {
+        height: 462px;
+
+        background: $siteBlue;
+    }
+    .description {
+        padding-top: 32px;
+        width: 90%;
+        height: 58px;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        color: $siteBlue;
+    }
+    .tags {
+        display: flex;
+        padding-top: 32px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 70px;
+        .tag {
+            box-sizing: border-box;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 4px 16px;
+            height: 26px;
+            border: 1px solid #03559b;
+            border-radius: 66px;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            color: $siteBlue;
+        }
+    }
+}

@@ -5,6 +5,8 @@
 @import "header.scss";
 @import "banner.scss";
 @import "navigation.scss";
+@import "projects.scss";
+@import "components/projectElement.scss";
 
 body,
 html {
@@ -18,44 +20,6 @@ html {
 }
 .emojifont {
     font-family: "Noto Color Emoji", sans-serif;
-}
-
-.container {
-    width: 1560px;
-    min-width: 1560px;
-    margin: 0 auto;
-    height: 100%;
-    @include media("<=1560px") {
-        width: 1280px;
-        min-width: 1280px;
-    }
-    @include media("<=desktop") {
-        width: 1080px;
-        min-width: 1080px;
-    }
-    @include media("<=1080px") {
-        width: 100%;
-        min-width: 100%;
-    }
-    .row {
-        display: flex;
-        height: 100%;
-    }
-    .v-center {
-        align-items: center;
-    }
-    .space-between {
-        justify-content: space-between;
-    }
-}
-
-.container-fluid {
-    width: 100%;
-    height: 100%;
-    .row {
-        display: flex;
-        height: 100%;
-    }
 }
 
 .app {

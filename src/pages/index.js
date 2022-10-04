@@ -3,6 +3,7 @@ import Header from "./header";
 import "../styles/app.scss";
 import Banner from "./banner";
 import Navigation from "./navigation";
+import Projects from "./projects";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header></Header>
             <Banner></Banner>
             <Navigation></Navigation>
+            <Projects></Projects>
         </div>
     );
 }
