@@ -4,6 +4,7 @@ import "../styles/app.scss";
 import Banner from "./banner";
 import Navigation from "./navigation";
 import Projects from "./projects";
+import Resume from "./resume";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Banner></Banner>
             <Navigation></Navigation>
             <Projects></Projects>
+            <Resume></Resume>
         </div>
     );
 }
