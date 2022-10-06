@@ -4,7 +4,7 @@ function Resume() {
     return (
         <div className="resume">
             <div className="texts">
-                <div className="title">
+                <div className="title" id="title">
                     <span>Resume</span>
                 </div>
                 <div className="text-bloc">
@@ -16,7 +16,10 @@ function Resume() {
                             <em>eliott {"&"} markus</em>
                         </strong>
                         , and open to freelance projects.{" "}
-                        <span>Would love to hear from you.</span>
+                        <span>
+                            Would love to hear from you. <br></br>
+                            {name(1)}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -24,4 +27,13 @@ function Resume() {
     );
 }
 
+function name(params) {
+    const n = 8; // Or something else
+
+    return [...Array(n)].map((e, i) => (
+        <span className="busterCards" key={i}>
+            Test
+        </span>
+    ));
+}
 export default Resume;
