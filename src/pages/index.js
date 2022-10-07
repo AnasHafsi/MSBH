@@ -5,6 +5,7 @@ import Banner from "./banner";
 import Navigation from "./navigation";
 import Projects from "./projects";
 import Resume from "./resume";
+import About from "./about";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Navigation></Navigation>
             <Projects></Projects>
             <Resume></Resume>
+            <About></About>
         </div>
     );
 }

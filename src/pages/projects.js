@@ -42,11 +42,11 @@ function Projects() {
         <div className="projects">
             <div className="elements">
                 {listProjects.map((project) => (
-                    <div className="element">
+                    <div className="element" key={project.id}>
                         <ProjectElement
                             key={project.id}
                             value={project}
-                        ></ProjectElement>
+                        />
                     </div>
                 ))}
             </div>

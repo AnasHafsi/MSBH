@@ -1,0 +1,51 @@
+.about {
+  padding-bottom: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  .texts {
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+
+    .title {
+      width: 33%;
+
+      span {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $siteBlue;
+      }
+    }
+
+    .content {
+      width: 66%;
+
+      .element {
+        padding-bottom: 95px;
+        .subtitle {
+          font-family: "DM Sans";
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 42px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        .description {
+          width: 50%;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: $black;
+        }
+      }
+    }
+  }
+}

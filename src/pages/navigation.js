@@ -59,7 +59,7 @@ function Navigation() {
             <div className="row">
                 <div className="inPage">
                     {internalLinks.map((navItem) => (
-                        <div className="element" key={navItem.key}>
+                        <div className="element" key={navItem.id}>
                             <a href={navItem.link}>{navItem.name}</a>
                         </div>
                     ))}
