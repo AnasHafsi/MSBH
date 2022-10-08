@@ -12,7 +12,6 @@ import Footer from "./footer";
 function App() {
     return (
         <div className="app">
-            <React.StrictMode>
                 <Header></Header>
                 <Banner></Banner>
                 <Navigation></Navigation>
@@ -21,7 +20,6 @@ function App() {
                 <About></About>
                 <Contact></Contact>
                 <Footer></Footer>
-            </React.StrictMode>
         </div>
     );
 }

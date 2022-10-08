@@ -1,15 +1,14 @@
 import React from "react";
-import WavingHand from "../assets/wavingHand.inline.svg";
-import Morocco from "../assets/morocco.inline.svg";
+import Emojis from "./components/emojis";
 
 function Banner() {
     return (
         <div className="banner">
             <p>
                 Hello{" "}
-                <WavingHand key={1}/>{" "}
-                I am Public Repository, UX/UI designer from Casablanca Morocco{" "}
-                <Morocco key={2}/>
+                <Emojis value="waving-hand-medium-light-skin-tone" size="45"></Emojis>{" "}
+                I am Insert Name, UX/UI designer from Insert City, Morocco{" "}
+                <div style={{ position: 'relative', top: 7 + 'px' }}><Emojis value="flag-morocco" size="45"></Emojis></div>
             </p>
         </div>
     );
