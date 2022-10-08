@@ -4,7 +4,7 @@ function ProjectElement(props) {
     return (
         <div className="project-element">
             <div className="img-element"></div>
-            <div className="description">
+            <div className="description" key={props?.value.id}>
                 {props?.value && props.value.description}
             </div>
 

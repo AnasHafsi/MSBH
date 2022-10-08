@@ -1,42 +1,32 @@
 import React from 'react';
-import Emoji from "./components/emoji";
+import PinchedFingers from "../assets/pinchedFingers.inline.svg";
+import CallMe from "../assets/callme.inline.svg";
+import Gesture from "../assets/gesture.inline.svg";
 
 const elements = [
   {
     id: 1,
     subtitle: "Meeting",
-    emoji: <Emoji
-      symbol="🤙🏼"
-      label="Call Me Hand Medium Light Skin Tone"
-      alt="Call Me Hand Medium Light Skin Tone"
-    />,
+    emoji: <CallMe></CallMe>,
     description: "Understanding your needs and your project through an initial videoconference, by researching I try to recognize the problem and learn as mush as I can."
   },
   {
     id: 2,
     subtitle: "Developing",
-    emoji: <Emoji
-      symbol="🤌🏼"
-      useFont="false"
-      label="Pinched Fingers Medium Light Skin Tone"
-      alt="Pinched Fingers Medium Light Skin Tone"
-    />,
+    emoji: <PinchedFingers />,
     description: "Developing few design directions and from there on designing and prototyping an initial concept."
   },
   {
     id: 3,
     subtitle: "Integrating",
-    emoji: <Emoji
-      symbol="🤟🏼"
-      label="Love You Gesture Medium Light Skin Tone"
-      alt="Love You Gesture Medium Light Skin Tone"
-    />,
+    emoji: <Gesture></Gesture>,
     description: "Working closely with developers to insure the best design integration, and making sure to have the best possible solutions."
   },
 ]
 function About() {
   return (
     <div className="about">
+      
       <div className="texts">
         <div className="title">
           <span>About</span>

@@ -1,18 +1,15 @@
 import React from "react";
-import Emoji from "./components/emoji";
+import WavingHand from "../assets/wavingHand.inline.svg";
+import Morocco from "../assets/morocco.inline.svg";
 
 function Banner() {
     return (
         <div className="banner">
             <p>
                 Hello{" "}
-                <Emoji
-                    symbol="👋🏼"
-                    label="Waving Hand Medium Light Skin Tone"
-                    alt="Waving Hand Medium Light Skin Tone"
-                />{" "}
+                <WavingHand key={1}/>{" "}
                 I am Public Repository, UX/UI designer from Casablanca Morocco{" "}
-                <Emoji symbol="🇲🇦" useFont="true" label="Moroccan Flag" />
+                <Morocco key={2}/>
             </p>
         </div>
     );

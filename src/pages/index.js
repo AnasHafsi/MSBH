@@ -6,20 +6,22 @@ import Navigation from "./navigation";
 import Projects from "./projects";
 import Resume from "./resume";
 import About from "./about";
-import Chat from "./chat";
+import Contact from "./contact";
 import Footer from "./footer";
 
 function App() {
     return (
         <div className="app">
-            <Header></Header>
-            <Banner></Banner>
-            <Navigation></Navigation>
-            <Projects></Projects>
-            <Resume></Resume>
-            <About></About>
-            <Chat></Chat>
-            <Footer></Footer>
+            <React.StrictMode>
+                <Header></Header>
+                <Banner></Banner>
+                <Navigation></Navigation>
+                <Projects></Projects>
+                <Resume></Resume>
+                <About></About>
+                <Contact></Contact>
+                <Footer></Footer>
+            </React.StrictMode>
         </div>
     );
 }
