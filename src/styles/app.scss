@@ -17,6 +17,7 @@ html {
   user-select: none;
   background: $backWhite;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

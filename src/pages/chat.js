@@ -18,9 +18,14 @@ function Chat() {
 }
 
 function numberOfRepeats() {
-    const a = window.innerWidth;
-    console.log(Math.ceil(a / 580))
-    return Math.ceil(a / 580) + 1;
+    if (typeof window !== "undefined") {
+        const a = window.innerWidth;
+        console.log(Math.ceil(a / 580))
+        return Math.ceil(a / 580) + 1;
+    } else {
+        return 3;
+    }
+
 }
 
 export default Chat

@@ -5,12 +5,12 @@ function Footer() {
     return (
         <div className="footer">
             <div className="row">
-                <a onClick={() => { navigator.clipboard.writeText("email to copy") }}>
+                <button onClick={() => { navigator.clipboard.writeText("email to copy") }}>
                     <div className="email">
                         <Email />
                         <div className="text">Copy e-mail!</div>
                     </div>
-                </a>
+                </button>
                 <div className="credits">MSBH Square © 2022. All rights reserved.</div>
             </div>
         </div>
