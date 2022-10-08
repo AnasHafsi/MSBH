@@ -39,7 +39,7 @@ const listProjects = [
 
 function Projects() {
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <div className="elements">
                 {listProjects.map((project) => (
                     <div className="element" key={project.id}>

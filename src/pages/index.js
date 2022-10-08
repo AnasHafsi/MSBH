@@ -16,8 +16,8 @@ function App() {
                 <Banner></Banner>
                 <Navigation></Navigation>
                 <Projects></Projects>
-                <Resume></Resume>
                 <About></About>
+                <Resume></Resume>
                 <Contact></Contact>
                 <Footer></Footer>
         </div>
