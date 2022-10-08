@@ -6,6 +6,8 @@ import Navigation from "./navigation";
 import Projects from "./projects";
 import Resume from "./resume";
 import About from "./about";
+import Chat from "./chat";
+import Footer from "./footer";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
             <Projects></Projects>
             <Resume></Resume>
             <About></About>
+            <Chat></Chat>
+            <Footer></Footer>
         </div>
     );
 }

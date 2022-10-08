@@ -8,27 +8,29 @@
 @import "projects.scss";
 @import "resume.scss";
 @import "about.scss";
+@import "chat.scss";
+@import "footer.scss";
 @import "components/projectElement.scss";
 
 body,
 html {
-    user-select: none;
-    background: $backWhite;
-    overscroll-behavior: none;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "DM Sans", sans-serif;
+  user-select: none;
+  background: $backWhite;
+  overscroll-behavior: none;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "DM Sans", sans-serif;
 }
 .emojifont {
-    font-family: "Noto Color Emoji", sans-serif;
+  font-family: "Noto Color Emoji", sans-serif;
 }
 
 .app {
-    margin-left: 50px;
-    margin-right: 50px;
-    @include media("<=phone") {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  margin-left: 50px;
+  margin-right: 50px;
+  @include media("<=phone") {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

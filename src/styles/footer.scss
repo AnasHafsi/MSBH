@@ -1,0 +1,35 @@
+.footer {
+  display: block;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      cursor: pointer;
+      .email {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .text {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+    .credits {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: right;
+      color: $black;
+    }
+  }
+}
