@@ -11,15 +11,16 @@ const internalLinks = [
         link: "#projects",
     },
     {
-        id: 2,
-        name: "About",
-        link: "#About",
-    },
-    {
         id: 3,
         name: "Resume",
         link: "#Resume",
     },
+    {
+        id: 2,
+        name: "About",
+        link: "#About",
+    },
+    
     {
         id: 4,
         name: "Contact",
