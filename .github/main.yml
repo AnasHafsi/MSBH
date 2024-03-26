@@ -1,7 +1,12 @@
 name: GitHub Actions Demo
 uses: di-sukharev/opencommit@github-action-v1.0.2
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
