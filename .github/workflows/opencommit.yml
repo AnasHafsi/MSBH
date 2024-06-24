@@ -35,11 +35,11 @@ jobs:
 
                   # customization
                   OCO_TOKENS_MAX_INPUT: 4096
-                  OCO_TOKENS_MAX_OUTPUT: 50
+                  OCO_TOKENS_MAX_OUTPUT: 20
                   OCO_OPENAI_BASE_PATH: ""
                   OCO_DESCRIPTION: false
                   OCO_EMOJI: true
                   OCO_MODEL: gpt-3.5-turbo
                   OCO_LANGUAGE: en
                   OCO_PROMPT_MODULE: conventional-commit
-                  OCO_ONE_LINE_COMMIT: true
+                  OCO_ONE_LINE_COMMIT: false
