@@ -2,10 +2,12 @@ name: "OpenCommit Action"
 
 on:
     push:
-        branches: ["main"]
+        branches: 
+            - '**' 
     pull_request:
         # The branches below must be a subset of the branches above
-        branches: ["main"]
+        branches: 
+            - '**' 
 
 jobs:
     opencommit:
@@ -17,7 +19,7 @@ jobs:
             - name: Setup Node.js Environment
               uses: actions/setup-node@v2
               with:
-                  node-version: "16"
+                  node-version: "20"
             - uses: actions/checkout@v3
               with:
                   fetch-depth: 0
