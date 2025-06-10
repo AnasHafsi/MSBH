@@ -19,10 +19,10 @@
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.0.0",
     "gatsby-plugin-sitemap": "^6.0.0",
-    "react": "^18.1.0",
+    "react": "^19.0.0",
     "react-apple-emojis": "^2.2.1",
     "react-device-detect": "^2.2.2",
-    "react-dom": "^18.1.0",
+    "react-dom": "^19.0.0",
     "sass": "^1.54.9"
   }
 }
