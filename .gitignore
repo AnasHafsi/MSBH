@@ -38,3 +38,7 @@ build/
 
 # Misc
 .eslintcache
+
+# Workflow files that require special permissions
+# See WORKFLOW_IMPROVEMENTS.md for manual setup instructions
+.github/workflows/ci.yml
