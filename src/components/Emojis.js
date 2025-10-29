@@ -13,6 +13,7 @@ const emojiMap = {
 
 // Convert emoji to Twemoji codepoint
 const emojiToCodepoint = (emoji) => {
+    if (!emoji) return '';
     const codepoints = [];
     for (let i = 0; i < emoji.length; i++) {
         const code = emoji.codePointAt(i);
@@ -26,8 +27,13 @@ const emojiToCodepoint = (emoji) => {
 };
 
 const Emojis = ({ value, size }) => {
+    if (!value) return null;
+
     const emoji = emojiMap[value] || value;
     const codepoint = emojiToCodepoint(emoji);
+
+    if (!codepoint) return null;
+
     const twemojiUrl = `https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/${codepoint}.svg`;
 
     return (

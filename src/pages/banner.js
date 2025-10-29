@@ -1,5 +1,5 @@
 import React from "react";
-import Emojis from "./components/emojis";
+import Emojis from "../components/Emojis";
 import { PROFILE } from "../config/profile";
 
 function Banner() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Emojis from './components/emojis';
+import Emojis from '../components/Emojis';
 
 const elements = [
   {

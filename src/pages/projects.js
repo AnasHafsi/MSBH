@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectElement from "./components/projectElement";
+import ProjectElement from "../components/ProjectElement";
 
 const listProjects = [
     {
