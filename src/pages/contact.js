@@ -28,7 +28,12 @@ function Contact() {
     return (
         <div className="contact" id="Contact">
             <div className="text">
-                {textRow}
+                <div className="scroll-content">
+                    {textRow}
+                </div>
+                <div className="scroll-content" aria-hidden="true">
+                    {textRow}
+                </div>
             </div>
         </div>
     )

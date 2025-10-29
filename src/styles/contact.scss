@@ -1,3 +1,12 @@
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .contact {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -12,6 +21,14 @@
     white-space: nowrap;
     margin-left: -100px;
     margin-right: -50px;
+
+    .scroll-content {
+      display: flex;
+      gap: 50px;
+      animation: scroll-left 20s linear infinite;
+      flex-shrink: 0;
+    }
+
     .talk {
       font-size: 100px;
       font-family: "DM Sans";
