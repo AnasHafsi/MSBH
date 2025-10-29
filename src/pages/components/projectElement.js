@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function ProjectElement(props) {
     return (
@@ -12,15 +13,29 @@ function ProjectElement(props) {
                 <div className="tag">{props?.value && props.value.year}</div>
                 {getTags(props?.value && props.value.tags)}
             </div>
-            <br></br>
         </div>
     );
 }
 
+ProjectElement.propTypes = {
+    value: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string,
+        description: PropTypes.string,
+        year: PropTypes.number,
+        tags: PropTypes.arrayOf(
+            PropTypes.shape({
+                id: PropTypes.number.isRequired,
+                text: PropTypes.string.isRequired,
+            })
+        ),
+    }),
+};
+
 function getTags(params) {
     if (params?.length > 0) {
         return params.map((tag) => (
-            <div key={tag.key} className="tag">
+            <div key={tag.id} className="tag">
                 {tag.text}
             </div>
         ));
