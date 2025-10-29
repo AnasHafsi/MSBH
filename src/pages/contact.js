@@ -1,5 +1,6 @@
 import React from 'react'
 import Emojis from '../components/Emojis';
+import { PROFILE } from '../config/profile';
 
 const CONTACT_REPEAT_WIDTH = 580;
 
@@ -21,7 +22,11 @@ function Contact() {
 
     const textRow = [];
     for (let i = 1; i < repeats * 2; i += 2) {
-        textRow.push(<div className="talk" key={i}>Let's chat</div>);
+        textRow.push(
+            <a href={`mailto:${PROFILE.email}`} className="talk" key={i}>
+                Let's chat
+            </a>
+        );
         textRow.push(<div className="emojis" key={i+1}><Emojis value="speech-balloon" size="35"></Emojis></div>);
     }
 
