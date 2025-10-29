@@ -1,5 +1,6 @@
 import React from "react";
 import Emojis from "./components/emojis";
+import { PROFILE } from "../config/profile";
 
 function Banner() {
     return (
@@ -7,8 +8,8 @@ function Banner() {
             <p>
                 Hello{" "}
                 <Emojis value="waving-hand-medium-light-skin-tone" size="45"></Emojis>{" "}
-                I am Insert Name, UX/UI designer from Insert City, Morocco{" "}
-                <div style={{ position: 'relative', top: 7 + 'px' }}><Emojis value="flag-morocco" size="45"></Emojis></div>
+                I am {PROFILE.name}, {PROFILE.title} from {PROFILE.city}, Morocco{" "}
+                <span className="flag-emoji"><Emojis value="flag-morocco" size="45"></Emojis></span>
             </p>
         </div>
     );

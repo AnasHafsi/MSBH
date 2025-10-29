@@ -1,4 +1,6 @@
 import * as React from "react";
+import { EmojiProvider } from 'react-apple-emojis';
+import emojiData from '../utils/emoji-data.json';
 import Header from "./header";
 import "../styles/app.scss";
 import Banner from "./banner";
@@ -11,7 +13,8 @@ import Footer from "./footer";
 
 function App() {
     return (
-        <div className="app">
+        <EmojiProvider data={emojiData}>
+            <div className="app">
                 <Header></Header>
                 <Banner></Banner>
                 <Navigation></Navigation>
@@ -20,7 +23,8 @@ function App() {
                 <About></About>
                 <Contact></Contact>
                 <Footer></Footer>
-        </div>
+            </div>
+        </EmojiProvider>
     );
 }
 export default App;

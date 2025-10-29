@@ -3,7 +3,7 @@ module.exports = {
         title: `MSBH`,
         description: `MSBH Portfolio website`,
         twitterUsername: `@msbh`,
-        siteUrl: `http://localhost:8000/`,
+        siteUrl: process.env.GATSBY_SITE_URL || `http://localhost:8000/`,
     },
     plugins: [
         "gatsby-plugin-sass",
@@ -15,5 +15,6 @@ module.exports = {
                 },
             },
         },
+        "gatsby-plugin-sitemap",
     ],
 };

@@ -12,17 +12,25 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss,md}\""
   },
   "dependencies": {
     "gatsby": "^5.14.6",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.0.0",
     "gatsby-plugin-sitemap": "^6.0.0",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-apple-emojis": "^2.2.1",
-    "react-device-detect": "^2.2.2",
     "react-dom": "^18.1.0",
     "sass": "^1.54.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-react-app": "^7.0.1",
+    "prettier": "^3.2.5"
   }
 }

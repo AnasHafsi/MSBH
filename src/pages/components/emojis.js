@@ -1,10 +1,14 @@
 import React from "react";
-import { EmojiProvider, Emoji } from 'react-apple-emojis'
-import emojiData from '../../utils/emoji-data.json'
+import PropTypes from "prop-types";
+import { Emoji } from 'react-apple-emojis';
 
-const Emojis = (props) => (
-    <EmojiProvider data={emojiData}>
-      <Emoji name={props.value} width={props.size}/>
-    </EmojiProvider>
+const Emojis = ({ value, size }) => (
+    <Emoji name={value} width={size} />
 );
+
+Emojis.propTypes = {
+    value: PropTypes.string.isRequired,
+    size: PropTypes.string.isRequired,
+};
+
 export default Emojis;

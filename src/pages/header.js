@@ -9,9 +9,7 @@ function Header() {
                         <Logo></Logo>
                     </div>
                     <div className="start">
-                        <button>
-                            <a href="#header">start a project</a>
-                        </button>
+                        <a href="#Contact" className="button">start a project</a>
                     </div>
                 </div>
             </div>
