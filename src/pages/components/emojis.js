@@ -11,21 +11,38 @@ const emojiMap = {
     "love-you-gesture-medium-light-skin-tone": "🤟🏼",
 };
 
+// Convert emoji to Twemoji codepoint
+const emojiToCodepoint = (emoji) => {
+    const codepoints = [];
+    for (let i = 0; i < emoji.length; i++) {
+        const code = emoji.codePointAt(i);
+        if (code) {
+            codepoints.push(code.toString(16));
+            // Skip the next character if it's a surrogate pair
+            if (code > 0xffff) i++;
+        }
+    }
+    return codepoints.join('-');
+};
+
 const Emojis = ({ value, size }) => {
     const emoji = emojiMap[value] || value;
+    const codepoint = emojiToCodepoint(emoji);
+    const twemojiUrl = `https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/${codepoint}.svg`;
 
     return (
-        <span
+        <img
+            src={twemojiUrl}
+            alt={value}
             role="img"
             aria-label={value}
             style={{
-                fontSize: `${size}px`,
-                lineHeight: 1,
-                display: 'inline-block'
+                width: `${size}px`,
+                height: `${size}px`,
+                display: 'inline-block',
+                verticalAlign: 'middle'
             }}
-        >
-            {emoji}
-        </span>
+        />
     );
 };
 
