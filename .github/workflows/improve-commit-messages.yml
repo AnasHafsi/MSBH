@@ -1,0 +1,48 @@
+name: Improve Commit Messages
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+      - '!master'
+      - '!develop'
+
+permissions:
+  contents: read
+
+jobs:
+  improve-commit-message:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Reword latest commit message with Claude
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          PROMPT="You are generating a single git commit message for the diff piped via stdin below. Output ONLY the commit message text, nothing else: no preamble, no explanation, no markdown code fences, no surrounding quotes.
+          Format: one line, gitmoji + conventional-commit type(scope): description. Keep it under 72 characters total, even if the diff spans many files - summarize the overall intent concisely, never produce multiple lines."
+
+          MSG="$(git show HEAD | claude -p "$PROMPT" --allowedTools "" --model haiku | head -1 | tr -d '\r')"
+
+          if [ -z "$MSG" ]; then
+            echo "No message generated, leaving commit as-is."
+            exit 0
+          fi
+
+          git config user.name "$(git log -1 --format='%an' HEAD)"
+          git config user.email "$(git log -1 --format='%ae' HEAD)"
+          git commit --amend -m "$MSG"
+          git push --force
