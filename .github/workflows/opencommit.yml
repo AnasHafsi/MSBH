@@ -15,7 +15,9 @@ jobs:
         name: OpenCommit
         if: ${{ github.actor != 'dependabot[bot]' }}
         runs-on: ubuntu-latest
-        permissions: write-all
+        permissions:
+            contents: write
+            pull-requests: write
         steps:
             - name: Setup Node.js Environment
               uses: actions/setup-node@v6
