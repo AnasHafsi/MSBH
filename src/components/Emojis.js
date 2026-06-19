@@ -13,7 +13,7 @@ const emojiMap = {
 
 // Convert emoji to Twemoji codepoint
 const emojiToCodepoint = (emoji) => {
-    if (!emoji) return '';
+    if (!emoji) return "";
     const codepoints = [];
     for (let i = 0; i < emoji.length; i++) {
         const code = emoji.codePointAt(i);
@@ -23,7 +23,7 @@ const emojiToCodepoint = (emoji) => {
             if (code > 0xffff) i++;
         }
     }
-    return codepoints.join('-');
+    return codepoints.join("-");
 };
 
 const Emojis = ({ value, size }) => {
@@ -45,8 +45,8 @@ const Emojis = ({ value, size }) => {
             style={{
                 width: `${size}px`,
                 height: `${size}px`,
-                display: 'inline-block',
-                verticalAlign: 'middle'
+                display: "inline-block",
+                verticalAlign: "middle",
             }}
         />
     );

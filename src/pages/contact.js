@@ -1,6 +1,6 @@
-import React from 'react'
-import Emojis from '../components/Emojis';
-import { PROFILE } from '../config/profile';
+import React from "react";
+import Emojis from "../components/Emojis";
+import { PROFILE } from "../config/profile";
 
 const CONTACT_REPEAT_WIDTH = 580;
 
@@ -14,9 +14,9 @@ function Contact() {
             };
 
             calculateRepeats();
-            window.addEventListener('resize', calculateRepeats);
+            window.addEventListener("resize", calculateRepeats);
 
-            return () => window.removeEventListener('resize', calculateRepeats);
+            return () => window.removeEventListener("resize", calculateRepeats);
         }
     }, []);
 
@@ -24,24 +24,26 @@ function Contact() {
     for (let i = 1; i < repeats * 2; i += 2) {
         textRow.push(
             <a href={`mailto:${PROFILE.email}`} className="talk" key={i}>
-                Let's chat
+                Let{"'"}s chat
             </a>
         );
-        textRow.push(<div className="emojis" key={i+1}><Emojis value="speech-balloon" size="35"></Emojis></div>);
+        textRow.push(
+            <div className="emojis" key={i + 1}>
+                <Emojis value="speech-balloon" size="35"></Emojis>
+            </div>
+        );
     }
 
     return (
         <div className="contact" id="Contact">
             <div className="text">
-                <div className="scroll-content">
-                    {textRow}
-                </div>
+                <div className="scroll-content">{textRow}</div>
                 <div className="scroll-content" aria-hidden="true">
                     {textRow}
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;

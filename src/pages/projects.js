@@ -43,10 +43,7 @@ function Projects() {
             <div className="elements">
                 {listProjects.map((project) => (
                     <div className="element" key={project.id}>
-                        <ProjectElement
-                            key={project.id}
-                            value={project}
-                        />
+                        <ProjectElement key={project.id} value={project} />
                     </div>
                 ))}
             </div>
