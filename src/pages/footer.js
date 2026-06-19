@@ -6,12 +6,15 @@ function Footer() {
     const [copied, setCopied] = React.useState(false);
 
     const copyEmail = () => {
-        navigator.clipboard.writeText(PROFILE.email).then(() => {
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        }).catch((err) => {
-            console.error('Failed to copy email:', err);
-        });
+        navigator.clipboard
+            .writeText(PROFILE.email)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            })
+            .catch((err) => {
+                console.error("Failed to copy email:", err);
+            });
     };
 
     return (
@@ -24,7 +27,7 @@ function Footer() {
                 >
                     <div className="email">
                         <Email />
-                        <div className="text">{copied ? 'Copied!' : 'Copy e-mail!'}</div>
+                        <div className="text">{copied ? "Copied!" : "Copy e-mail!"}</div>
                     </div>
                 </button>
                 <div className="credits">MSBH Square © 2022. All rights reserved.</div>
